@@ -31,3 +31,5 @@ This project is an Angular app with [Auth0](https://auth0.com/). This web provid
 
 ## Steps
 Sign up in [Auth0](https://auth0.com/) with Google.
+In the Auth0 dashboard click in create application (Single Page Web Application) and fill in the Settings tab the necessary fields to [use it](https://manage.auth0.com/dashboard).
+To integrate auth0 in the app you need loading a library.(Go to Quick Start tab to know how).
