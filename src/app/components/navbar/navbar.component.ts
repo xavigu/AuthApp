@@ -13,6 +13,6 @@ export class NavbarComponent implements OnInit {
   }
 
   ngOnInit() {
+    console.log('Auth object', this.auth); 
   }
-
 }
