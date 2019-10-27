@@ -1,3 +1,22 @@
-<p>
-  protegida works!
-</p>
+
+  <h1>Perfil de usuario</h1>
+  <hr>
+  <div class="card-deck" *ngIf="auth.userProfile$ | async as profile">
+    <div class="card">
+      <img class="card-img-top" [src]="profile.picture" alt="Profile picture">
+      <div class="card-body">
+        <h4 class="card-title">Nombre: {{profile.given_name | uppercase }}</h4>
+        <h4 class="card-title">Apellidos: {{profile.family_name | uppercase}}</h4>
+        <p class="card-text">Nickname: {{profile.nickname}}</p>
+        <p class="card-text"><small class="text-muted">Last updated: {{profile.updated_at}}</small></p>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+<pre *ngIf="auth.userProfile$ | async as profile"> <!-- Espera de forma asincrona la respuesta del usuario y se asigna al alias profile-->
+  <code>{{ profile | json }}</code>
+</pre>

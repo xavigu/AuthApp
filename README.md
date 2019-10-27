@@ -33,6 +33,7 @@ This project is an Angular app with [Auth0](https://auth0.com/). This web provid
 Sign up in [Auth0](https://auth0.com/) with Google.
 In the Auth0 dashboard click in create application (Single Page Web Application) and fill in the Settings tab the necessary fields to [use it](https://manage.auth0.com/dashboard).
 To integrate auth0 in the app you need loading a library.(Go to Quick Start tab to know how and follow the steps).
+To maintain the session open when you refresh your app, you need go to the Auth0 Dasboard in the option Universal Login -> New, and save changes.
 
 ## Notes
 You need to call your callback route in the app like the name you use in Allowed Callback URLs of Auth0 Dasboard settings

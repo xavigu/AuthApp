@@ -1,0 +1,11 @@
+.card-img-top{
+    max-height: 200px;
+    max-width: 200px;
+    margin-top: 10px;
+}
+
+.card{
+    align-items: center;
+    flex: none;
+    margin: 0 auto;
+}
