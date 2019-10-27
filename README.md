@@ -36,3 +36,5 @@ To integrate auth0 in the app you need loading a library.(Go to Quick Start tab 
 
 ## Notes
 You need to call your callback route in the app like the name you use in Allowed Callback URLs of Auth0 Dasboard settings
+You can choose the social logins that you want in your app from Connection -> Social in Auth0 Dashboard
+The guard.auth it was created with CanActivate implementation interface

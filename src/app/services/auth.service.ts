@@ -24,7 +24,7 @@ export class AuthService {
   // For each Auth0 SDK method, first ensure the client instance is ready
   // concatMap: Using the client instance, call SDK method; SDK returns a promise
   // from: Convert that resulting promise into an observable
-  isAuthenticated$ = this.auth0Client$.pipe(
+  isAuthenticated$ = this.auth0Client$.pipe( //Esta propiedad es un observable que devuelve un booleano
     concatMap((client: Auth0Client) => from(client.isAuthenticated())),
     tap(res => this.loggedIn = res)
   );
